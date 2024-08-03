@@ -5,11 +5,15 @@ import { MdOutlineGraphicEq } from 'react-icons/md'
 import { GoChecklist } from 'react-icons/go'
 import { IoWalletOutline } from 'react-icons/io5'
 import { IoBagCheckOutline } from 'react-icons/io5'
+import { SiBetterstack } from 'react-icons/si'
 
 export default function Sidebar() {
    return (
-      <div className='sidebar fixed left-0 md:top-[72px] bottom-0 w-full md:w-20 z-10 max-md:px-6 bg-primary'>
-         <div className='links flex flex-row md:flex-col gap-6 py-4'>
+      <div className='sidebar fixed md:top-0 left-0 bottom-0 w-full md:w-20 z-10 max-md:px-6 bg-primary'>
+         <div className='max-md:hidden px-6 py-4'>
+            <SiBetterstack size={40} />
+         </div>
+         <div className='links flex flex-row md:flex-col gap-6 py-4 max-md:justify-between'>
             <NavLink
                to={'/'}
                end

@@ -48,11 +48,11 @@ export default function OrdersSection() {
    ])
 
    return (
-      <div className='md:col-span-2 p-4 bg-primary rounded-lg h-[450px]'>
+      <div className='md:col-span-2 p-4 bg-primary rounded-lg max-h-[450px] max-md:overflow-auto'>
          <div className='flex justify-between items-center mb-6'>
             <p className='text-2xl text-white'>Recent Orders</p>
          </div>
-         <Table>
+         <Table className='min-w-[450px]'>
             <TableHeader>
                <TableRow className='border-b-[#3e3e46]'>
                   <TableCell className='text-white font-medium text-sm'>Customers</TableCell>

@@ -54,8 +54,8 @@ export default function Header() {
    }, [shouldDisplayHamburger])
 
    return (
-      <header className='flex items-center w-full bg-primary max-w-[2000px] mx-auto px-6 py-4 '>
-         <div className='logo '>
+      <header className='flex items-center w-full bg-primary max-w-[2000px] max-md:justify-between mx-auto px-4 md:px-6 py-4 '>
+         <div className='logo'>
             <SiBetterstack size={40} />
          </div>
          <SearchBar />

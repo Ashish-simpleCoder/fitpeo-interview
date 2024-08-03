@@ -7,7 +7,7 @@ export default function Hamburger({
 }: Pick<ComponentProps<'div'>, 'onClick'> & { isActive?: boolean }) {
    return (
       <div
-         className={cn('hamburger flex flex-col gap-1 cursor-pointer ml-auto', isActive && 'active-hamburger')}
+         className={cn('hamburger flex flex-col gap-1 cursor-pointer', isActive && 'active-hamburger')}
          onClick={onClick}
       >
          <div className='l1 bg-white h-[2px] w-6 rounded-full'></div>

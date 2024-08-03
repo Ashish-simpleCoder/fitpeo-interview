@@ -3,7 +3,7 @@ import { RiSearchLine } from 'react-icons/ri'
 export default function SearchBar() {
    return (
       <div
-         className='search-bar relative ml-10 items-center flex w-[240px] h-9 border border-[#333439] rounded-md'
+         className='search-bar relative md:ml-10 items-center flex w-[200px] md:w-[240px] h-9 border border-[#333439] rounded-md'
          role='textbox'
       >
          <RiSearchLine size={20} className='z-10 ml-2' fill='#b1b2b7' />
