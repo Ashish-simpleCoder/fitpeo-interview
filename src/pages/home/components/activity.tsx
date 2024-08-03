@@ -4,6 +4,14 @@ import { BiDish } from 'react-icons/bi'
 import { FaBowlFood } from 'react-icons/fa6'
 import { GoGoal } from 'react-icons/go'
 import { IoIosArrowForward } from 'react-icons/io'
+import {
+   Select,
+   SelectContent,
+   SelectGroup,
+   SelectItem,
+   SelectTrigger,
+   SelectValue,
+} from '../../../components/ui/select'
 
 export default function ActivitySection() {
    return (
@@ -11,10 +19,17 @@ export default function ActivitySection() {
          <div className='md:col-span-2 p-4 bg-primary rounded-lg'>
             <div className='flex justify-between items-center'>
                <p className='text-2xl text-white'>Activity</p>
-               <select className='bg-[#4b4c51] text-sm text-white px-2 py-1 rounded-full' name='' id=''>
-                  <option value='yearly'>yearly</option>
-                  <option value='weekly'>weeekly</option>
-               </select>
+               <Select defaultValue='weekly'>
+                  <SelectTrigger className='w-[100px] bg-[#4b4c51] border-0 rounded-full text-white'>
+                     <SelectValue placeholder='Select' />
+                  </SelectTrigger>
+                  <SelectContent className='bg-[#4b4c51] text-white'>
+                     <SelectGroup>
+                        <SelectItem value='yearly'>yearly</SelectItem>
+                        <SelectItem value='weekly'>weekly</SelectItem>
+                     </SelectGroup>
+                  </SelectContent>
+               </Select>
             </div>
             <div className='h-52 mt-6'>
                <Example />
@@ -60,7 +75,6 @@ export default function ActivitySection() {
       </div>
    )
 }
-
 
 const data = [
    {

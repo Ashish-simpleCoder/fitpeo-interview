@@ -90,7 +90,7 @@ export default function Header() {
             </>
          )}
          {shouldDisplayHamburger && shouldShowNav && (
-            <div>
+            <div className='fixed z-30'>
                <div
                   className='overlay fixed inset-0  bg-[rgba(21,20,25,0.3)] flex flex-col z-20'
                   onClick={hideNav}

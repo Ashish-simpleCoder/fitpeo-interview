@@ -10,6 +10,7 @@
     "format": "prettier --write ./src"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.1.1",
     "classic-react-hooks": "^1.3.0",
     "clsx": "^2.1.1",
     "react": "^18.3.1",
