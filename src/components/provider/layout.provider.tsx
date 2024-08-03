@@ -7,7 +7,7 @@ export default function LayoutProvider(props: PropsWithChildren) {
       <>
          <Header />
          <Sidebar />
-         <div className='main-content left-20 relative w-[calc(100%-80px)]'>{props.children}</div>
+         <div className='main-content left-20 relative w-[calc(100%-80px)] p-6'>{props.children}</div>
       </>
    )
 }

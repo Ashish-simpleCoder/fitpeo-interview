@@ -1,9 +1,10 @@
+import { NavLink } from 'react-router-dom'
+
 import { MdOutlineHome } from 'react-icons/md'
 import { MdOutlineGraphicEq } from 'react-icons/md'
 import { GoChecklist } from 'react-icons/go'
 import { IoWalletOutline } from 'react-icons/io5'
 import { IoBagCheckOutline } from 'react-icons/io5'
-import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
    return (
