@@ -1,4 +1,5 @@
 import ActivitySection from './components/activity'
+import OrdersSection from './components/orders'
 import Statistics from './components/statistics'
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
          <div className='flex flex-col gap-8'>
             <Statistics />
             <ActivitySection />
+            <OrdersSection />
          </div>
       </div>
    )

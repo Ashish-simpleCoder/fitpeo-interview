@@ -79,9 +79,7 @@ export default function Statistics() {
                   <span>5%</span>
                </StatusIndicator>
             </div>
-            <div>
-               {/* <CircularBar /> */}
-            </div>
+            <div>{/* <CircularBar /> */}</div>
          </div>
       </div>
    )
