@@ -2,7 +2,18 @@
 export default {
    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
    theme: {
-      extend: {},
+      extend: {
+         backgroundColor:{
+            "primary":"#202028",
+            "body-bg":"#151419",
+         },
+         textColor:{
+            primary:"#b1b2b7"
+         },
+         fill:{
+            'default-fill':'#b1b2b7',
+         }
+      },
    },
    plugins: [],
 }
