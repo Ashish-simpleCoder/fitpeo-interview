@@ -12,6 +12,9 @@ export default {
          },
          fill:{
             'default-fill':'#b1b2b7',
+         },
+         stroke:{
+            'default-stroke':'#b1b2b7',
          }
       },
    },
