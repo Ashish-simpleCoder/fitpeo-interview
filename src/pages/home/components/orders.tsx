@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHeader, TableRow } from '../../../com
 import Tag from '../../../components/common/tag'
 
 export default function OrdersSection() {
-   const [orders, setOrders] = useState([
+   const [orders, _setOrders] = useState([
       {
          id: 1,
          profile_img: 'https://avatars.githubusercontent.com/u/1?v=4',

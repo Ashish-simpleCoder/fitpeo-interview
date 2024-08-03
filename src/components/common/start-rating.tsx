@@ -12,7 +12,7 @@ export default function StarRating({
    total_rating_feedbacks?: number
    disabled?: boolean
 }) {
-   const [stars, setStars] = useState(() => [...new Array(size).keys()])
+   const [stars, _setStars] = useState(() => [...new Array(size).keys()])
    const [new_level, setNewLevel] = useState<number>(rating_level)
 
    const onMouseEnter = (id: number) => {

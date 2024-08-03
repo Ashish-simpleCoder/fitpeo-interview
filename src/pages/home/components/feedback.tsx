@@ -2,7 +2,7 @@ import { useState } from 'react'
 import StarRating from '../../../components/common/start-rating'
 
 export default function FeedbackSection() {
-   const [feedbacks, setFeedbacks] = useState([
+   const [feedbacks, _setFeedbacks] = useState([
       {
          id: 1,
          profile_img: 'https://avatars.githubusercontent.com/u/1?v=4',

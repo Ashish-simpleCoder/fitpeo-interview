@@ -3,7 +3,7 @@ import { IoBagCheck } from 'react-icons/io5'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 
 import StatusIndicator from '../../../components/common/status-indicator'
-import CircularBar from '../../../components/common/circular-bar'
+// import CircularBar from '../../../components/common/circular-bar'
 
 export default function Statistics() {
    return (
