@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { SiBetterstack } from 'react-icons/si'
 import { MdMailOutline, MdOutlineSettings, MdOutlineNotifications } from 'react-icons/md'
 import { CgProfile } from 'react-icons/cg'
-import { useSyncedEffect } from 'classic-react-hooks'
+import { useEventListener, useSyncedEffect } from 'classic-react-hooks'
 
 import SearchBar from '../common/search-bar'
 import useWindowWidth from '../../hooks/use-window-width'
@@ -14,6 +14,16 @@ export default function Header() {
    const shouldDisplayHamburger = useWindowWidth(() => window.innerWidth < 1024)
    const [shouldShowNav, setShouldNav] = useState(false)
    const [top, setTop] = useState(0)
+   useEventListener(
+      window,
+      'keydown',
+      (e) => {
+         if (e.key == 'Escape') {
+            hideNav()
+         }
+      },
+      { shouldInjectEvent: shouldShowNav }
+   )
 
    const showNav = () => {
       setShouldNav(true)
@@ -64,6 +74,7 @@ export default function Header() {
             </button>
          </div>
 
+         {/* mobile header */}
          {shouldDisplayHamburger && (
             <>
                <Hamburger
@@ -79,9 +90,13 @@ export default function Header() {
             </>
          )}
          {shouldDisplayHamburger && shouldShowNav && (
-            <>
+            <div>
                <div
-                  className={cn('fixed bottom-0 bg-[#151419] flex flex-col z-20 w-52 right-0')}
+                  className='overlay fixed inset-0  bg-[rgba(21,20,25,0.3)] flex flex-col z-20'
+                  onClick={hideNav}
+               ></div>
+               <div
+                  className={cn('fixed bottom-0 bg-[#151419] flex flex-col z-20 w-52 right-0 p-4 gap-4')}
                   style={{ top: top + 'px' }}
                >
                   <button className='bg-[#434448] p-2 rounded-full w-9 h-9 flex items-center justify-center text-primary'>
@@ -93,11 +108,11 @@ export default function Header() {
                   <button className='bg-[#434448] p-2 rounded-full w-9 h-9 flex items-center justify-center text-primary'>
                      <MdOutlineNotifications size={25} />
                   </button>
-                  <button className='bg-[#434448] p-2 rounded-full w-9 h-9 flex items-center justify-center text-primary ml-4'>
+                  <button className='bg-[#434448] p-2 rounded-full w-9 h-9 flex items-center justify-center text-primary mt-auto'>
                      <CgProfile size={25} />
                   </button>
                </div>
-            </>
+            </div>
          )}
       </header>
    )
