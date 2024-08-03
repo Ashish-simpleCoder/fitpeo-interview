@@ -9,7 +9,7 @@ import { SiBetterstack } from 'react-icons/si'
 
 export default function Sidebar() {
    return (
-      <div className='sidebar fixed md:top-0 left-0 bottom-0 w-full md:w-20 z-10 max-md:px-6 bg-primary'>
+      <div className='sidebar fixed md:top-0 left-0 bottom-0 w-full md:w-20 z-10 max-md:px-4 bg-primary'>
          <div className='max-md:hidden px-6 py-4'>
             <SiBetterstack size={40} />
          </div>
