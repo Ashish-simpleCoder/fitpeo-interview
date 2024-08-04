@@ -17,11 +17,12 @@ const StatusStyles = {
 export default function StatusIndicator({
    status = 'up',
    children,
-}: { status?: keyof typeof StatusStyles } & PropsWithChildren) {
+   className,
+}: { status?: keyof typeof StatusStyles; className?: string } & PropsWithChildren) {
    const Icon = StatusStyles[status]
 
    return (
-      <span className={cn(Icon.className, 'flex gap-1 items-center')}>
+      <span className={cn(Icon.className, 'flex gap-1 items-center', className)}>
          <Icon.icon />
          {children}
       </span>

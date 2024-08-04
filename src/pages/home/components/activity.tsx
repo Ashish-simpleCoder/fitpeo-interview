@@ -16,7 +16,7 @@ import {
 export default function ActivitySection() {
    return (
       <div className='gap-6 w-full grid xl:grid-cols-3 '>
-         <div className='md:col-span-2 p-4 bg-primary rounded-lg'>
+         <div className='xl:col-span-2 p-4 bg-primary rounded-lg'>
             <div className='flex justify-between items-center'>
                <p className='text-2xl text-white'>Activity</p>
                <Select defaultValue='weekly'>
