@@ -76,7 +76,7 @@ export default function Statistics() {
          <div className='flex bg-primary p-3 rounded-lg'>
             <div className='flex flex-col justify-between'>
                <p className='text-white text-sm'>Net Profit</p>
-               <p className='text-white text-3xl font-bold'>$ 3861.45</p>
+               <p className='text-white text-3xl font-bold mt-6'>$ 3861.45</p>
                <StatusIndicator className='leading-8'>
                   <span>5%</span>
                </StatusIndicator>
