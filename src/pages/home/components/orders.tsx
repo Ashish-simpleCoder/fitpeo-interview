@@ -48,7 +48,7 @@ export default function OrdersSection() {
    ])
 
    return (
-      <div className='md:col-span-2 p-4 bg-primary rounded-lg max-h-[450px] max-md:overflow-auto'>
+      <div className='xl:col-span-2 p-4 bg-primary rounded-lg max-h-[450px] max-md:overflow-auto'>
          <div className='flex justify-between items-center mb-6'>
             <p className='text-2xl text-white'>Recent Orders</p>
          </div>

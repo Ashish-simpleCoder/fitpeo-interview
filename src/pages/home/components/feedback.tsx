@@ -41,11 +41,11 @@ export default function FeedbackSection() {
    ])
 
    return (
-      <div className=' p-4 bg-primary rounded-lg h-[450px] overflow-hidden'>
+      <div className='p-4 bg-primary rounded-lg h-[450px] w-full overflow-hidden'>
          <div className='flex justify-between items-center mb-6'>
             <p className='text-2xl text-white'>Customer's 'Feedback</p>
          </div>
-         <div className='flex flex-col overflow-auto h-[calc(100%-40px)] pb-4 divide-y-[1px] divide-[#3e3e46] [&_>div]:py-4 [&_>div:nth-child(1)]:pt-0'>
+         <div className='grid overflow-auto h-[calc(100%-40px)] pb-4 divide-y-[1px] divide-[#3e3e46] [&_>div]:py-4 [&_>div:nth-child(1)]:pt-0'>
             {feedbacks.map((feedback) => {
                return (
                   <div key={feedback.id} className=''>

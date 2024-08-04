@@ -5,7 +5,7 @@ import Statistics from './components/statistics'
 
 export default function HomePage() {
    return (
-      <div className='max-md:mb-20'>
+      <div className='max-md:mb-20 max-w-[2200px] mx-auto'>
          <h2 className='text-2xl text-white mb-8'>Dashboard</h2>
          <div className='flex flex-col gap-8'>
             <Statistics />
